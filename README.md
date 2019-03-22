@@ -3,14 +3,22 @@
 [Udacity Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) - Project
 
 The aim of this project is to optimize the critical rendering path and make the index.html page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
-Also we had to optimize FPS in pizza.html.
+Also we had to optimize FPS in pizza.html.("do this")
 
-## Getting started
-The code for the "before" website can be found [here](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
+## Links to GitHub Repository (Master Branch)
 
-The code for the "after" website can be found [here](https://github.com/kishorchouhan/website-optimization)
+* GitHub project repository udacity: [https://github.com/udacity/frontend-nanodegree-mobile-portfolio](https://github.com/udacity/frontend-nanodegree-mobile-portfolio "GitHub project repository udacity")
 
-In addition, the "after" website is hosted [here](https://kishorchouhan.github.io/website-optimization/)
+* My GitHub Project Repository(code of "after" website): [https://github.com/kishorchouhan/Website-Optimization-Udacity-Project](https://github.com/kishorchouhan/Website-Optimization-Udacity-Project "My GitHub Project Repository")
+
+* My Project Website Is Hosted Here: [https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/](https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/ "My Hosted Website")
+
+To run the website and take code on local machine:
+
+1. Download the GitHub zip file or clone the repository onto your local workstation:
+	* zip file [https://github.com/kishorchouhan/Website-Optimization-Udacity-Project/archive/master.zip](https://github.com/kishorchouhan/Website-Optimization-Udacity-Project/archive/master.zip "download zip file")
+	* git clone [https://github.com/kishorchouhan/Website-Optimization-Udacity-Project.git/](https://github.com/kishorchouhan/Website-Optimization-Udacity-Project.git "git clone repository")
+2. Open a browser window and navigate to the index.html file in your directory.
 
 ## Part 1: Optimize PageSpeed Insights score for index.html
 
@@ -51,12 +59,21 @@ To first test this, start `views/pizza.html` in the browser and open Chrome Dev 
 
 ### Optimizations
 
+####Optimizing the Scrolling
 
+I made the following changes in order to optimize the scrolling:
 
+1. In main.js, there was a loop that created 200 small moving pizzas in the background, which was an overkill because not all were displayed. I was able to cut that down to 20. The number is now dynamic, based on screen height.
+2. The updatePositions function had calculations within a loop that were redundant and could be moved outside of the loop.
 
+####Optimizing the Pizza Resizing
 
+I made the following changes to optimize the pizza resizing:
 
-
+1. The changePizzaSizes function was using the same thing multiple times so created a new myRandomPizzas variable.
+2. The determineDx function has no use so removed this function and embedded the switch object inside changePizzaSizes function.
+3. End the redundancy of changing width from px to % in changePizzaSizes function.
+4. The changePizzaSizes had a very inefficient for loop. I moved some calculations out of the for loop.
 
 
 ## From project:
