@@ -3,7 +3,8 @@
 [Udacity Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001) - Project
 
 The aim of this project is to optimize the critical rendering path and make the index.html page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
-Also we had to optimize FPS in pizza.html.("do this")
+
+Also we had to optimize FPS in pizza.html.("Do this after taking Browser Rendering Optimization course("https://www.udacity.com/course/ud860")")
 
 ## Links to GitHub Repository (Master Branch)
 
