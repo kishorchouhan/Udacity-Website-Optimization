@@ -12,7 +12,9 @@ Also we had to optimize FPS in pizza.html.("Do this after taking Browser Renderi
 
 * My GitHub Project Repository(code of "after" website): [https://github.com/kishorchouhan/Website-Optimization-Udacity-Project](https://github.com/kishorchouhan/Website-Optimization-Udacity-Project "My GitHub Project Repository")
 
-* My Project Website Is Hosted Here: [https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/](https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/ "My Hosted Website")
+* My Project("Part 1") Website Is Hosted Here: [https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/index.html](https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/index.html "My Hosted Website: part 1")
+
+* My Project("Part 2: Pizza site") Website Is Hosted Here: [https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/views/pizza.html](https://kishorchouhan.github.io/Website-Optimization-Udacity-Project/views/pizza.html "My Hosted Website: Pizza site")
 
 To run the website and take code on local machine:
 
